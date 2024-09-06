@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Vanshaj_backend": {
+      "main": "src/Vanshaj_backend/main.mo",
+      "type": "motoko"
+    },
+    "Vanshaj_frontend": {
+      "dependencies": [
+        "Vanshaj_backend"
+      ],
+      "source": [
+        "src/Vanshaj_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Vanshaj_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
