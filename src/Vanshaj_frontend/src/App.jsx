@@ -15,15 +15,22 @@ function App() {
 
   return (
     <main>
-      <img src="/logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#" onSubmit={handleSubmit}>
-        <label htmlFor="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
+      
+      <h1>Hello, Vanshaj!</h1>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Name:
+          <input name="name" />
+        </label>
+        <button type="submit">Greet</button>
       </form>
-      <section id="greeting">{greeting}</section>
+      <p>{greeting}</p>
+
+      {/* develop a basic frontend*/}
+      <h1>Basic Frontend</h1>
+      <p>Develop a basic frontend that allows the user to enter their name and then displays a greeting message.</p>
+      <p>When the user enters their name and clicks the "Greet" button, the frontend should send a request to the backend to get a greeting message for the user.</p>
+      
     </main>
   );
 }
